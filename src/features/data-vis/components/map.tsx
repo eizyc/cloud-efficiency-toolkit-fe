@@ -93,7 +93,7 @@ export const D3Map = ({ instances, onSelect }: { instances: any, onSelect: (d: a
       return `translate(${projection([d.geo.longitude, d.geo.latitude])[0]}, ${projection([d.geo.longitude, d.geo.latitude])[1]})`
     })
     .style("cursor","pointer")
-    .on('mouseover', function(_,d) {
+    .on('mouseover', function() {
       d3.select(this).raise();
     })
     .on('click', function(_,d) {
@@ -109,10 +109,10 @@ export const D3Map = ({ instances, onSelect }: { instances: any, onSelect: (d: a
       return [d]
     })
     .join("rect")
-    .style("fill", (d)=>{
+    .style("fill", ()=>{
       return "#F3F7FF"
      })
-    .style("filter", (d)=>{
+    .style("filter", ()=>{
        return "drop-shadow(0px 4px 7px rgba(0, 0, 0, 0.25))"
     })
 

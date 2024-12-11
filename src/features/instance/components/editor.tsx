@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Loader, X } from "lucide-react";
-import ReactJson from 'react-json-view'
+import ReactJson from 'react18-json-view'
+import 'react18-json-view/src/style.css'
 import { useGetInstance } from "@/features/instance/hooks/use-get-instance";
 import { usePanel } from "@/features/instance/store/use-panel";
 

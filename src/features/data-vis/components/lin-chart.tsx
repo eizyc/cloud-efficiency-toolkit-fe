@@ -3,7 +3,7 @@
 import { Line } from '@ant-design/plots';
 import { useMemo } from 'react';
 
-const mergeByTimestamp = (data:any) => {
+const mergeByTimestamp = (data) => {
   const merged = {};
 
   data.forEach(item => {
